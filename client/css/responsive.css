@@ -1,0 +1,44 @@
+@media(max-width:992px){
+
+.sidebar{
+    width:220px;
+}
+
+.main{
+    margin-left:220px;
+}
+
+footer{
+    margin-left:220px;
+}
+
+}
+
+@media(max-width:768px){
+
+.sidebar{
+    display:none;
+}
+
+.main{
+    margin-left:0;
+}
+
+footer{
+    margin-left:0;
+}
+
+.stats{
+    grid-template-columns:1fr;
+}
+
+.table-header{
+    flex-direction:column;
+    gap:15px;
+}
+
+#searchInput{
+    width:100%;
+}
+
+}

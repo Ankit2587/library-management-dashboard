@@ -1,0 +1,24 @@
+:root{
+
+    --primary:#2563eb;
+    --primary-dark:#1d4ed8;
+
+    --success:#22c55e;
+    --danger:#ef4444;
+    --warning:#f59e0b;
+
+    --sidebar:#0f172a;
+    --sidebar-hover:#1e293b;
+
+    --background:#f8fafc;
+    --card:#ffffff;
+
+    --text:#0f172a;
+    --gray:#64748b;
+
+    --shadow:
+    0 8px 25px rgba(0,0,0,.08);
+
+    --radius:14px;
+
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Management</title>
+
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+<div id="loader" class="loader-container">
+
+    <div class="spinner"></div>
+
+    <p>Loading Books...</p>
+
+</div>
+<header>
+    <div class="logo">📚 Library Dashboard</div>
+
+    <div class="user">
+        <i class="fas fa-user-circle fa-2x"></i>
+        <span>Admin</span>
+    </div>
+</header>
+
+<aside class="sidebar">
+
+    <ul>
+
+        <li>
+            <a href="../index.html">
+                <i class="fas fa-chart-line"></i>
+                Dashboard
+            </a>
+        </li>
+
+        <li class="active">
+            <a href="books.html">
+                <i class="fas fa-book"></i>
+                Books
+            </a>
+        </li>
+
+        <li>
+            <a href="statistics.html">
+                <i class="fas fa-chart-pie"></i>
+                Statistics
+            </a>
+        </li>
+
+        <li>
+            <a href="about.html">
+                <i class="fas fa-circle-info"></i>
+                About
+            </a>
+        </li>
+
+        <li>
+            <a href="contact.html">
+                <i class="fas fa-phone"></i>
+                Contact
+            </a>
+        </li>
+
+    </ul>
+
+</aside>
+
+<div class="main">
+
+    <div class="page-title">
+        <h1>Books Management</h1>
+    </div>
+
+    <div class="table-container">
+
+        <div class="table-header">
+
+            <button id="addBookBtn">
+                + Add Book
+            </button>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search Books...">
+
+        </div>
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Category</th>
+                    <th>Year</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+
+            </thead>
+
+            <tbody id="bookTableBody"></tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<!-- MODAL -->
+
+<div id="bookModal" class="modal">
+
+    <div class="modal-content">
+
+        <h2>Add New Book</h2>
+
+        <input type="text" id="title" placeholder="Title">
+
+        <input type="text" id="author" placeholder="Author">
+
+        <input type="text" id="category" placeholder="Category">
+
+        <input type="number" id="publishedYear" placeholder="Published Year">
+
+        <select id="available">
+            <option value="true">Available</option>
+            <option value="false">Unavailable</option>
+        </select>
+
+        <div class="modal-buttons">
+
+            <button id="saveBook">
+                Save Book
+            </button>
+
+            <button id="closeModal">
+                Cancel
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="../js/books.js"></script>
+
+</body>
+</html>
